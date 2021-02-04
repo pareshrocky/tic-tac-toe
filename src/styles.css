@@ -1,0 +1,158 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.Container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 250px;
+  width: 250px;
+  margin: 5% 0 5% 22.5%;
+  justify-content: center;
+}
+#btn-class {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  text-align: center;
+  padding: 0;
+  border: 2px solid grey;
+  border-radius: 7.5px;
+  box-shadow: 3px 3px 5px grey;
+}
+#btn-class:focus {
+  outline: none;
+}
+#btn-class:hover {
+  opacity: 0.7;
+}
+.welcome {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.front-div {
+  margin-top: 3%;
+}
+.player-btn {
+  border: 5px solid transparent;
+  background: #aed6d1;
+  color: #55706d;
+  border-radius: 40px;
+  padding: 15px 30px;
+  overflow: hidden;
+  width: 175px;
+  transition: all 0.5s, border 0.5s 0.5s, box-shadow 0.5s 0.6s;
+  margin: 0 12.5px 15px;
+  font-weight: bold;
+}
+.player-btn:focus {
+  outline: none;
+}
+.player-btn:hover {
+  text-indent: 0;
+  background: #55706d;
+  color: #ffe8a3;
+  width: 200px;
+  border: 10px solid #8dccc4;
+  box-shadow: 3px 3px 2px rgba(black, 0.15);
+}
+.winner {
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 1)
+  );
+}
+.playerTurn {
+  margin: 20px 0 0 15px;
+}
+.result {
+  margin-top: 25px;
+}
+.turn {
+  margin-top: 10px;
+}
+.bigContainer {
+  display: flex;
+  flex-direction: row;
+}
+.score {
+  margin: 5% 2.5% 5% 25%;
+}
+.scoreContainer {
+  border: 2px solid grey;
+  padding: 5px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 260px;
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px grey;
+}
+.crossBtn {
+  border: 0;
+  display: block;
+  width: 30px;
+  height: 29px;
+  margin-bottom: 7px;
+  background: url(https://web.archive.org/web/20110126035650/http://digitalsbykobke.com/images/close.png)
+    no-repeat center center;
+}
+.crossBtn:focus {
+  outline: none;
+}
+.pScore {
+  border: 1px solid black;
+  transform: skewX(-15deg);
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.resetBtn {
+  border-radius: 7.5px;
+  padding: 8px 4px;
+  background-color: #8dccc4;
+  font-weight: bold;
+}
+.resetBtn:focus {
+  outline: none;
+}
+.resetBtn:hover {
+  box-shadow: 3px 3px 5px grey;
+  background-color: #55706d;
+  color: #ffe8a3;
+  padding: 8px 4px;
+}
+.viewScoreBtn {
+  border-radius: 7.5px;
+  padding: 10px;
+  font-weight: bold;
+}
+.viewScoreBtn:focus {
+  outline: none;
+}
+.viewScoreBtn:hover {
+  box-shadow: 3px 3px 5px black;
+}
+.warning {
+  font-size: 9px;
+  color: red;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+@media Screen and (max-width: 700px) {
+  .bigContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+  .score {
+    margin: 23% auto;
+  }
+  .Container {
+    margin: 0 auto;
+  }
+}
